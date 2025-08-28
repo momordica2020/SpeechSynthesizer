@@ -13,3 +13,12 @@ D:\CProjects\mySpeechSynthesizer\SSTester\bin\Debug\mySpeechSynthesizer.pdb
 D:\CProjects\mySpeechSynthesizer\SSTester\obj\Debug\SSTester.csproj.CopyComplete
 D:\CProjects\mySpeechSynthesizer\SSTester\obj\Debug\SSTester.exe
 D:\CProjects\mySpeechSynthesizer\SSTester\obj\Debug\SSTester.pdb
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.csproj.AssemblyReference.cache
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.exe.config
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\nntest.Form1.resources
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\nntest.Form2.resources
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.Properties.Resources.resources
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.csproj.GenerateResource.cache
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.csproj.CoreCompileInputs.cache
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.exe
+D:\Projects\SpeechSynthesizer\SSTester\obj\Debug\SSTester.pdb

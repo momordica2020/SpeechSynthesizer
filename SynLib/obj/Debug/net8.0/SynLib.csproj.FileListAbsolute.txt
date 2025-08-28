@@ -1,0 +1,13 @@
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.csproj.AssemblyReference.cache
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.AssemblyInfoInputs.cache
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.AssemblyInfo.cs
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.csproj.CoreCompileInputs.cache
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.sourcelink.json
+D:\Projects\SpeechSynthesizer\SynLib\bin\Debug\net8.0\SynLib.deps.json
+D:\Projects\SpeechSynthesizer\SynLib\bin\Debug\net8.0\SynLib.dll
+D:\Projects\SpeechSynthesizer\SynLib\bin\Debug\net8.0\SynLib.pdb
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.dll
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\refint\SynLib.dll
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\SynLib.pdb
+D:\Projects\SpeechSynthesizer\SynLib\obj\Debug\net8.0\ref\SynLib.dll

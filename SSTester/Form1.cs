@@ -11,10 +11,10 @@ using System.IO;
 using System.Media;
 using System.Net;
 using System.Web;
-using mySpeechSynthesizer;
+using SynLib;
 using System.Threading;
 using System.Diagnostics;
-using mySpeechSynthesizer.NNLink;
+using SynLib.NNLink;
 
 namespace nntest
 {
@@ -455,47 +455,7 @@ namespace nntest
             }
         }
 
-        public Dictionary<string, string> getBaiduToken()
-        {
-            Dictionary<string, string> dict = new Dictionary<string, string>();
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://openapi.baidu.com/oauth/2.0/token");
-            request.CookieContainer = new CookieContainer();
-            request.Accept = "Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
-            request.Headers["Accept-Language"] = "zh-CN,zh;q=0.";
-            request.Headers["Accept-Charset"] = "GBK,utf-8;q=0.7,*;q=0.3";
-            request.UserAgent = "User-Agent:Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.202 Safari/535.1";
-            request.KeepAlive = false;
-            request.ContentType = "application/x-www-form-urlencoded";
-            request.Method = "POST";
-
-            Encoding encoding = Encoding.UTF8;
-            byte[] postData = encoding.GetBytes(string.Format("grant_type={0}&client_id={1}&client_secret={2}",
-                "client_credentials",
-                "q6uhWBgzBYDVcHLEuleYBj9r",
-                "DZKH7t1c3NP9HHj9mWNoGqmutXxyEu1o"));
-            request.ContentLength = postData.Length;
-            Stream requestStream = request.GetRequestStream();
-            requestStream.Write(postData, 0, postData.Length);
-
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            Stream responseStream = response.GetResponseStream();
-            StreamReader streamReader = new StreamReader(responseStream, encoding);
-            string retString = streamReader.ReadToEnd();
-
-            string[] res = retString.Replace("\n", "").Split(',');
-            dict["access_token"] = res[0].Split(':')[1].Split('\"')[1];
-            dict["session_key"] = res[1].Split(':')[1].Split('\"')[1];
-            dict["scope"] = res[2].Split(':')[1].Split('\"')[1];
-            dict["refresh_token"] = res[3].Split(':')[1].Split('\"')[1];
-            dict["session_secret"] = res[4].Split(':')[1].Split('\"')[1];
-            dict["expires_in"] = res[5].Split(':')[1].Replace("}\"", "");
-
-            streamReader.Close();
-            responseStream.Close();
-
-            return dict;
-        }
-
+       
 
         private clsMCI cm;
         public void getBaiduSound(string str,string token)
@@ -542,9 +502,9 @@ namespace nntest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var res=getBaiduToken();
-            string text = textBox2.Text;
-            getBaiduSound(text, res["access_token"]);
+           // var res=getBaiduToken();
+           // string text = textBox2.Text;
+           // getBaiduSound(text, res["access_token"]);
 
         }
 
@@ -674,7 +634,7 @@ namespace nntest
             {
                 foreach (var vv in v)
                 {
-                    var ipa=mySpeechSynthesizer.Analysis.IPAManager.Pinyin2IPA(vv.Substring(0,vv.Length-1));
+                    var ipa=SynLib.Analysis.IPAManager.Pinyin2IPA(vv.Substring(0,vv.Length-1));
                     resstr.Append(vv + " ");
                 }
                 resstr.Append("\r\n");
